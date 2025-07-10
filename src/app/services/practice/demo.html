@@ -1,0 +1,162 @@
+<div class="d-flex" style="min-height: 100vh;">
+    <!-- Sidebar -->
+    <div class="d-flex flex-column justify-content-between p-3 shadow-sm"
+        style="width: 250px; height: 100vh; background-color: #800000; color: white; font-family: 'Segoe UI', sans-serif;">
+
+        <!-- Top Menu -->
+        <div>
+            <h4 class="text-center fw-bold mb-4 border-bottom pb-2">ELMS Admin</h4>
+
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white d-flex align-items-center sidebar-link active" href="#">
+                        <i class="bi bi-speedometer2 me-2"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white d-flex align-items-center sidebar-link" href="#">
+                        <i class="bi bi-people me-2"></i> Employees
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white d-flex align-items-center sidebar-link" href="#">
+                        <i class="bi bi-calendar-check me-2"></i> Leave Management
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white d-flex align-items-center sidebar-link" href="#">
+                        <i class="bi bi-bar-chart me-2"></i> Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center sidebar-link" href="#">
+                        <i class="bi bi-gear me-2"></i> Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="mt-auto">
+            <hr class="border-light" />
+            <a class="nav-link text-white d-flex align-items-center sidebar-link" href="#">
+                <i class="bi bi-box-arrow-right me-2"></i> Logout
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 bg-light">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-white shadow-sm justify-content-end px-3">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Admin User
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dashboard Content -->
+        <div class="container-fluid p-4">
+            <!-- Cards -->
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase text-muted">Total Employees</h6>
+                            <h3>156</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase text-muted">Active Leaves</h6>
+                            <h3>23</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase text-muted">Pending Approvals</h6>
+                            <h3>8</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h6 class="text-uppercase text-muted">This Month</h6>
+                            <h3>45</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leave Applications Table -->
+            <div class="card shadow-sm mt-4">
+                <div class="card-header"><strong>Recent Leave Applications</strong></div>
+                <div class="card-body p-0">
+                    <table class="table table-bordered mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Employee</th>
+                                <th>Leave Type</th>
+                                <th>Duration</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>Sick Leave</td>
+                                <td>2 days</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>
+                                    <button class="btn btn-success btn-sm me-1">Approve</button>
+                                    <button class="btn btn-danger btn-sm">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>Annual Leave</td>
+                                <td>5 days</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                                <td>
+                                    <button class="btn btn-info btn-sm text-white">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mike Johnson</td>
+                                <td>Personal Leave</td>
+                                <td>1 day</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>
+                                    <button class="btn btn-success btn-sm me-1">Approve</button>
+                                    <button class="btn btn-danger btn-sm">Reject</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card shadow-sm mt-4 mb-4">
+                <div class="card-header"><strong>Quick Actions</strong></div>
+                <div class="card-body">
+                    <button class="btn btn-primary w-100 mb-2">Add New Employee</button>
+                    <button class="btn btn-success w-100 mb-2">New Leave Request</button>
+                    <button class="btn btn-secondary w-100 mb-2">Export Reports</button>
+                    <button class="btn btn-warning w-100">System Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
