@@ -1,0 +1,11 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(to bottom right, #5f2c82, #49a09d);
+  border-radius: 15px;
+  color: white;
+}
